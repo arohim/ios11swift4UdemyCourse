@@ -16,6 +16,7 @@
 		F3499C84208273E700E62F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3499C83208273E700E62F69 /* Assets.xcassets */; };
 		F3499C87208273E700E62F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3499C85208273E700E62F69 /* LaunchScreen.storyboard */; };
 		F3499C912082803700E62F69 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3499C902082803700E62F69 /* BorderButton.swift */; };
+		F3A99E62208B850E004FDF5F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A99E61208B850E004FDF5F /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F3499C86208273E700E62F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3499C88208273E700E62F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3499C902082803700E62F69 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		F3A99E61208B850E004FDF5F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		F3469BAF208519BA00D1B1F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3A99E61208B850E004FDF5F /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				F3469BB120851A4700D1B1F3 /* LeagueVC.swift in Sources */,
 				F3499C7C208273E600E62F69 /* WelcomeVC.swift in Sources */,
 				F3499C82208273E600E62F69 /* app_swoosh.xcdatamodeld in Sources */,
+				F3A99E62208B850E004FDF5F /* Player.swift in Sources */,
 				F3499C7A208273E600E62F69 /* AppDelegate.swift in Sources */,
 				F3469BB320851A5C00D1B1F3 /* SkillVC.swift in Sources */,
 				F3499C912082803700E62F69 /* BorderButton.swift in Sources */,

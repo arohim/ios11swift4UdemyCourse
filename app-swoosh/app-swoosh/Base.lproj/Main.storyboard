@@ -119,7 +119,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N20-7d-vGt" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N20-7d-vGt" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="662" width="374" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39755458049999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -147,6 +147,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="lYY-3B-PMQ" eventType="touchUpInside" id="Y4o-il-Q1o"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSG-J1-MMD" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="374" height="50"/>
@@ -158,6 +161,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="lYY-3B-PMQ" eventType="touchUpInside" id="lJw-2H-oi8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZM-Yz-nfl" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="374" height="50"/>
@@ -169,6 +175,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="lYY-3B-PMQ" eventType="touchUpInside" id="Fob-9x-ZPC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -206,6 +215,7 @@
                         <viewLayoutGuide key="safeArea" id="25a-uJ-RU1"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="N20-7d-vGt" id="txs-jQ-aWf"/>
                         <segue destination="qIK-L0-STV" kind="show" identifier="skillVCSegue" id="0oa-Md-XWq"/>
                         <segue destination="XyG-0O-fbb" kind="show" identifier="womenVCSegue" id="P10-kA-Mzo"/>
                     </connections>
