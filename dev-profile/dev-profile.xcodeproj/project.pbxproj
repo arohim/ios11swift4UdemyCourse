@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30D8CDC208CCD25004166B9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30D8CDB208CCD25004166B9 /* Storyboard.storyboard */; };
 		F3A99E70208B8AA6004FDF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A99E6F208B8AA6004FDF5F /* AppDelegate.swift */; };
 		F3A99E72208B8AA6004FDF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A99E71208B8AA6004FDF5F /* ViewController.swift */; };
 		F3A99E75208B8AA6004FDF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A99E73208B8AA6004FDF5F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F30D8CDB208CCD25004166B9 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F3A99E6C208B8AA6004FDF5F /* dev-profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev-profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A99E6F208B8AA6004FDF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3A99E71208B8AA6004FDF5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F3A99E7B208B8AA7004FDF5F /* LaunchScreen.storyboard */,
 				F3A99E7E208B8AA7004FDF5F /* Info.plist */,
 				F3A99E76208B8AA6004FDF5F /* dev_profile.xcdatamodeld */,
+				F30D8CDB208CCD25004166B9 /* Storyboard.storyboard */,
 			);
 			path = "dev-profile";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A99E7D208B8AA7004FDF5F /* LaunchScreen.storyboard in Resources */,
+				F30D8CDC208CCD25004166B9 /* Storyboard.storyboard in Resources */,
 				F3A99E7A208B8AA7004FDF5F /* Assets.xcassets in Resources */,
 				F3A99E75208B8AA6004FDF5F /* Main.storyboard in Resources */,
 			);
@@ -217,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -271,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
