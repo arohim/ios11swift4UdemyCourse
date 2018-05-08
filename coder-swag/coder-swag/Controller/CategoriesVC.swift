@@ -26,7 +26,7 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
-            let category = DataService.instance.getCategories()[indexPath.row]
+            let category = Data-Service.instance.getCategories()[indexPath.row]
             
             cell.updateviews(category: category)
             
@@ -34,6 +34,23 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
         
         return CategoryCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productVC = segue.destination as? ProductVC {
+            
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            productVC.initProducts(category: sender as! Category)
+            
+        }
     }
     
 
